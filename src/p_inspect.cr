@@ -1,5 +1,11 @@
-require "./p_inspect/*"
+class Object
+  def p_inspect
+    puts self
+    self
+  end
 
-module PInspect
-  # TODO Put your code here
+  def self.p_inspect
+    puts self
+    self
+  end
 end
